@@ -1,0 +1,25 @@
+.skills {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.skills__content {
+    
+}
+.skills__row-cards {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+
+    @media (max-width:1244px) {
+        width: 632px;
+        flex-wrap: wrap;
+        row-gap: 16px;
+    }
+    @media (max-width:661px) {
+        width: 285px;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        margin: 0 auto;
+    }
+
+}

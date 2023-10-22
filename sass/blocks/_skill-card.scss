@@ -1,0 +1,87 @@
+.skill-card{
+    width: 200px;
+    padding-bottom: 48px;
+    padding-top: 59px;
+    background-color: $bgCart;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    @media (max-width:661px) {
+        width: 285px;
+        flex-direction: row;
+        column-gap: 16px;
+        padding-bottom: 14px;
+        padding-top: 14px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .skill-card__image{
+        @media (max-width:661px) {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            margin-bottom: 0;
+            
+            svg{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    .context-button{
+        min-width: 157px;
+    }
+
+    &__image-item{
+        transition: fill 500ms ;
+    }
+
+    &__image{
+        margin-bottom: 15px;
+    }
+
+    &:hover{
+        .skill-card__image-item{
+            transition: fill 500ms ;
+        }
+        .skill-card__image-item--html{
+            fill: #FC490B;
+        }
+        .skill-card__image-item--css{
+            fill: #2196F4
+        }
+        .skill-card__image-item--js{
+            fill: #FFDF00;
+        }
+        .skill-card__image-item--scss{
+            fill: #CA669B;
+        }
+        .skill-card__image-item--git{
+            fill: #F25234;
+        }
+        .context-button{
+            transition: border-color 500ms;
+        }
+        .context-button--css{
+            border-color: #2196F4;
+        }
+        .context-button--html{
+            border-color: #FC490B;
+        }
+        .context-button--js{
+            border-color: #FFDF00;
+        }
+        .context-button--scss{
+            border-color: #CA669B;
+        }
+        .context-button--git{
+            border-color: #F25234;
+        }
+    }
+    &__action{
+
+    }
+}

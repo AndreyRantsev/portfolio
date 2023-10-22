@@ -1,0 +1,46 @@
+.main-title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.05;
+
+    color: $titleColor;
+
+    @media (max-width:661px) {
+        font-size: 40px;
+        font-weight: 900;
+    }
+}
+.main-subtitle{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.05;
+
+    @media (max-width:661px) {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+.wrapper-section-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.context-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    color: $titleColor;
+}
+.wrapper-info-title{
+    margin-bottom: 16px;
+}
+.wrapper-footer-title{
+    margin-bottom: 16px;
+
+    @media (max-width:1244px) {
+        text-align: center;
+
+        .context-title{
+            font-family: Impact;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.burger.active {
+   .burger__line {
+      background-color: transparent;
+
+      &::after {
+         top: 0;
+         transition: top 0.2s, transform 0.2s 0.2s;
+         transform: rotate(45deg);
+      }
+
+      &::before {
+         top: 0;
+         transition: top 0.2s, transform 0.2s 0.2s;
+         transform: rotate(-45deg);
+
+      }
+   }
+}
+
+.burger__line {
+   width: 36px;
+   height: 4px;
+   background-color: $mainText;
+   position: relative;
+   z-index: 2;
+
+
+   &::before,
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      width: 36px;
+      height: 4px;
+      background-color: $mainText;
+      transition: transform 0.2s, top 0.2s 0.2s;
+      transform: rotate(deg);
+   }
+
+   &::after {
+      top: 8px;
+   }
+
+   &::before {
+      top: -8px;
+   }
+}

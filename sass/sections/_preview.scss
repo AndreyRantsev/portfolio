@@ -1,0 +1,31 @@
+.preview{
+    padding-top: 72.5px;
+    padding-bottom: 72.5px;
+    @media (max-width:1244px) {
+        padding-bottom: 128px;
+        padding-top: 128px;
+    }
+}
+.preview__content{
+    display: flex;
+    column-gap: 137px;
+    align-items: center;
+    
+    @media (max-width:1244px) {
+        flex-direction: column;
+        row-gap: 64px;
+        
+    }
+    
+}
+.preview__avatar{
+    width: 629px;
+    height: 575px;
+    position: relative;
+    @media (max-width:661px) {
+        width: 413px;
+        height: 430px;  
+    }
+}
+
+

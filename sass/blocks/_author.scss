@@ -1,0 +1,26 @@
+.author{
+    width: 448px;
+    @media (max-width:661px) {
+        width: 314px;
+    }
+}
+.author__wrapper-main-title{
+    margin-bottom: 14px;
+    @media (max-width:661px) {
+        margin-bottom: 16px;
+    }
+}
+.author__wrapper-main-subtitle{
+    margin-bottom: 14px;
+    @media (max-width:661px) {
+        margin-bottom: 16px;
+    }
+}
+.author__disc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.05;
+    @media (max-width:661px) {
+        font-size: 24px;
+    }
+}

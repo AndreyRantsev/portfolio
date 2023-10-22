@@ -1,0 +1,34 @@
+.footer{
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+.footer__content{
+    display: flex;
+    column-gap: 64px;
+    justify-content: center;
+
+    @media (max-width:1244px) {
+        flex-direction:column ;
+        align-items: center;
+        row-gap: 64px;
+    }
+
+    @media (max-width:661px) {
+        row-gap: 74px;
+    }
+}
+.footer__copyright{
+    width: 213px;
+
+    @media (max-width:1244px) {
+        width: 339px;
+    }
+}
+.footer__copyright-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.05;
+}
+.footer__contacts {
+
+}
