@@ -55,7 +55,7 @@ const tlStart = gsap.timeline({})
       stagger:0.3,
       opacity:0,
       y:200,
-      ease: "bounce.out",
+      ease: "back.out(1.5)",
       scrollTrigger:{
          // markers:true,
          trigger: '.my-works',

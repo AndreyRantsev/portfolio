@@ -1,21 +1,86 @@
 .skill-card{
     width: 200px;
-    padding-bottom: 48px;
-    padding-top: 59px;
-    background-color: $bgCart;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 300px;
     flex-shrink: 0;
+
+    &__front,
+    &__back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform 1s;
+    }
+
+    &__front{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 48px;
+        padding-top: 59px;
+        background-color: $bgCart;
+        border-radius: 10px;
+
+        @media (max-width:661px) {
+            flex-direction: row;
+            column-gap: 16px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    &__back{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        background-color: rgba(70, 18, 155, 0.616);
+        transform: perspective(600px) rotateY(180deg);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+    }
+
+    &.active{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(0deg) !important;
+        z-index: 3;
+        min-width: 500px;
+        min-height: 400px;
+        @media (max-width:661px) {
+            min-width: 90%;
+            min-height: 50vh;
+        };
+
+        
+    }
+    
+    &.active &__front{
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    
+    &.active &__back{
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    &__close{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        transition: 1s;
+        &:hover{
+            transform: rotate(540deg);
+        };
+    };
+    
 
     @media (max-width:661px) {
         width: 285px;
-        flex-direction: row;
-        column-gap: 16px;
-        padding-bottom: 14px;
-        padding-top: 14px;
-        padding-left: 32px;
-        padding-right: 32px;
+        height: 60px;
     }
 
     .skill-card__image{
@@ -82,6 +147,13 @@
         }
     }
     &__action{
-
+        
+    }
+    &__discription{
+        font-family: 'Roboto Mono', monospace;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
     }
 }
