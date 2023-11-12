@@ -460,6 +460,11 @@ select:-webkit-autofill:focus {
   line-height: 1.05;
 }
 
+.contact-form {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .author {
   width: 448px;
 }
@@ -954,7 +959,7 @@ select:-webkit-autofill:focus {
   flex-direction: column;
   align-items: center;
   padding: 15px 40px;
-  background-color: rgb(52, 50, 44);
+  background-color: #1f1e1b;
 }
 
 .slider__top {
@@ -1065,4 +1070,8 @@ select:-webkit-autofill:focus {
 }
 .fadeblock.active {
   top: 0;
+}
+
+.form {
+  background-color: #1f1e1b;
 }/*# sourceMappingURL=main.css.map */
