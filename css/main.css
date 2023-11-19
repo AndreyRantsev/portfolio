@@ -785,6 +785,7 @@ select:-webkit-autofill:focus {
 .project-card {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 .project-card:hover .project-card__info {
   top: 0;
@@ -807,6 +808,7 @@ select:-webkit-autofill:focus {
   align-items: center;
   padding-top: 40.5px;
   padding-bottom: 40.5px;
+  border-radius: 15px;
   background: rgba(33, 32, 29, 0.98);
   transition: top 500ms;
 }
@@ -960,6 +962,8 @@ select:-webkit-autofill:focus {
   align-items: center;
   padding: 15px 40px;
   background-color: #1f1e1b;
+  border-radius: 20px;
+  margin: 0 10px;
 }
 
 .slider__top {
@@ -1073,5 +1077,60 @@ select:-webkit-autofill:focus {
 }
 
 .form {
+  padding: 30px 70px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #1f1e1b;
+  border-radius: 25px;
+}
+.form__item {
+  position: relative;
+}
+.form__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+.form__fake-placeholder {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 20px;
+  top: 50%;
+  font-size: 20px;
+  background: #1f1e1b;
+}
+.form__fake-placeholder.focus {
+  top: 0;
+}
+.form__input {
+  max-width: 800px;
+  width: 100%;
+  background-color: transparent;
+  height: 100px;
+  border-radius: 19px;
+  border: 2px solid #571E84;
+}
+.form__input--message {
+  resize: none;
+}
+.form__wrapper-submit {
+  text-align: center;
+}
+.form__submit {
+  padding: 0 130px;
+  background-color: #571E84 !important;
+  border-radius: 19px;
+  border: 1px solid #571E84;
+  color: #f0e3ca;
+  line-height: 77px;
+  font-size: 40px;
+  letter-spacing: 0.8px;
+}
+
+.wrapper-personal-data {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.law-link {
+  color: #571E84 !important;
 }/*# sourceMappingURL=main.css.map */

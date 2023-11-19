@@ -1,6 +1,7 @@
 .project-card{
     position: relative; 
     overflow: hidden;
+    border-radius: 15px;
 
     &:hover{
         .project-card__info{
@@ -24,6 +25,7 @@
     align-items: center;
     padding-top: 40.5px;
     padding-bottom: 40.5px;
+    border-radius: 15px;
     background: rgba(33, 32, 29, 0.98);
     transition: top 500ms;
 }

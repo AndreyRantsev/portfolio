@@ -1,17 +1,59 @@
 .form{
+    padding: 30px 70px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
     background-color: $bgCart;
+    border-radius: 25px;
+
     &__item {
+        position: relative;
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
     }
     &__fake-placeholder {
+        position: absolute;
+        transform: translateY(-50%);
+        left: 20px;
+        top: 50%;
+        font-size: 20px;
+        background: $bgCart;
+
+        &.focus{    
+            top: 0;
+        }
     }
     &__input {
+        max-width: 800px;
+        width: 100%;
+        background-color: transparent;
+        height: 100px;
+        border-radius: 19px;
+        border: 2px solid $titleColor;
+        
+        
     }
     &__input--message {
+        resize: none;
+    }
+    &__wrapper-submit{
+        text-align: center;
     }
     &__submit {
+        padding: 0 130px;
+        background-color: $titleColor !important;
+        border-radius: 19px;
+        border: 1px solid $titleColor;
+        color: $mainText;
+        line-height: 77px;
+        font-size: 40px;
+        letter-spacing: 0.8px;
     }
 }
 .wrapper-personal-data {
+    margin-bottom: 35px;
+    text-align: center;
 }
 .real-checkbox {
 }
@@ -20,4 +62,5 @@
 .law-text {
 }
 .law-link {
+    color: $titleColor !important;
 }
