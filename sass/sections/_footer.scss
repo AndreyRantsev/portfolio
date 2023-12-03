@@ -18,17 +18,15 @@
     }
 }
 .footer__copyright{
-    width: 213px;
+    max-width: 400px;
 
     @media (max-width:1244px) {
-        width: 339px;
+        max-width: 80%;
+        text-align: center;
     }
 }
 .footer__copyright-text {
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.05;
-}
-.footer__contacts {
-
+    line-height: 1.3;
 }

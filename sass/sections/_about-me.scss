@@ -31,15 +31,16 @@
     
 
     @media (max-width:1244px) {
+        max-width: 80%;
+        width: 100%;
         font-weight: 500;
-        width: 451px ;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.2;
     }
     
     @media (max-width:661px) {
         width: 322px;
-        
+        text-align: center;
         font-weight: 500;
     }
 }

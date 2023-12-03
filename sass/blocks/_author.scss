@@ -1,7 +1,8 @@
 .author{
     width: 448px;
     @media (max-width:661px) {
-        width: 314px;
+        width: 100%;
+        text-align: center;
     }
 }
 .author__wrapper-main-title{
@@ -21,6 +22,6 @@
     font-size: 20px;
     line-height: 1.05;
     @media (max-width:661px) {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
