@@ -3,6 +3,9 @@
 @import "./base/reset";
 @import "./base/base";
 
+// mixins
+@import "./mixins/mixin";
+
 // sections
 @import "./sections/header";
 @import "./sections/preview";

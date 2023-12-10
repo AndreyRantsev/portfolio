@@ -47,7 +47,14 @@ cross.forEach(item => {
 });
 
 
+//form animation
 
+const inputs = document.querySelectorAll(".form__input");
 
-
+inputs.forEach((item) => {
+    const placeholder = item.nextElementSibling;
+    item.addEventListener("focus", () => {
+        placeholder.style.top = "-2px"
+    })
+})
 

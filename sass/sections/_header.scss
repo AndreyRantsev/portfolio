@@ -91,7 +91,5 @@
     &:visited{
         color: $mainText;
     }
-    &:hover{
-        color: $titleColor;
-    }
+    @include header-hover($titleColor);
 }

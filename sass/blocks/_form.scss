@@ -24,11 +24,10 @@
         font-size: 20px;
         background: $bgCart;
         line-height: 1;
-
-        &.focus{    
-            top: 0;
-        }
+        transition: top 0.5s ease-in-out;
     }
+
+
     &__input {
         max-width: 800px;
         width: 100%;
@@ -39,6 +38,8 @@
         border: 2px solid $titleColor;
         color: $mainText;
         font-size: 24px;
+
+        
 
 
         @media(max-width:1244px){
