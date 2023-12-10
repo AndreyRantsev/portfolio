@@ -53,8 +53,15 @@ const inputs = document.querySelectorAll(".form__input");
 
 inputs.forEach((item) => {
     const placeholder = item.nextElementSibling;
+
     item.addEventListener("focus", () => {
         placeholder.style.top = "-2px"
+    })
+
+    item.addEventListener("blur", () => {
+        if (!item.value.length > 0) {
+            placeholder.style.top = "50%"
+        }
     })
 })
 
